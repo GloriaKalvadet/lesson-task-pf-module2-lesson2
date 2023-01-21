@@ -38,3 +38,28 @@ for (var i = 0; i < characters.length; i++){
     console.log(characters[i]);
   }
 }
+
+
+var product1 = {
+  id: 327,
+  name: "Screwdriver",
+  price: 99.99,
+};
+
+var product2 = {
+  id: 968,
+  name: "Wrench",
+  price: 50.95,
+};
+
+var products = [product1, product2];
+
+for (var i = 0; i < products.length; i++) {
+  console.log(products[i]);
+  console.log(products[i].name);
+}
+
+products.forEach(function (product, i) {
+  console.log(product, i);
+  console.log(product.name);
+});
